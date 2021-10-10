@@ -1,0 +1,28 @@
+{
+	"name": "athu",
+	"version": "0.0.0",
+	"license": "MIT",
+	"bin": "dist/cli.js",
+	"engines": {
+		"node": ">=10"
+	},
+	"scripts": {
+		"build": "tsc",
+		"start": "npm run build && dist/cli.js"
+	},
+	"files": [
+		"dist/cli.js"
+	],
+	"dependencies": {
+		"ink": "^3.2.0",
+		"ink-table": "^3.0.0",
+		"meow": "^9.0.0",
+		"react": "^17.0.2"
+	},
+	"devDependencies": {
+		"@types/react": "^17.0.27",
+		"eslint-plugin-react": "^7.26.1",
+		"eslint-plugin-react-hooks": "^4.2.0",
+		"typescript": "^4.4.3"
+	}
+}
