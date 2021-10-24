@@ -7,6 +7,8 @@ const mainStart = (()=>{
     setInterval(() => {
         const unixTime=Math.floor(Date.now() / 1000);
         counter=30-(unixTime % 30);
-        console.log(counter,genetateFinal(token));
+        const finalOTP=genetateFinal(token);
+        console.log(counter,finalOTP);
+        return finalOTP;
     }, 1000);
 })();
