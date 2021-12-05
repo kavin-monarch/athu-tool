@@ -2,9 +2,9 @@
    "type": "postgres",
    "host": "localhost",
    "port": 5432,
-   "username": "kavin",
-   "password": "pgroot",
-   "database": "kavin",
+   "username": "oneauth",
+   "password": "root",
+   "database": "oneauth",
    "synchronize": true,
    "logging": false,
    "entities": [

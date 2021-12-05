@@ -11,8 +11,8 @@ createConnection().then(async connection => {
 
     app.use("/authV2",devAuthRoutes);
 
-    app.listen(9090,"localhost",()=>{
-        console.log("Server started at port 9090");
+    app.listen(8080,"localhost",()=>{
+        console.log("Server started at port 8080");
     })
 
 }).catch(error => console.log(error));

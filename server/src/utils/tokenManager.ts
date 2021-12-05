@@ -16,6 +16,7 @@ class TokenEntity {
                     AuthController.getUser(data.username).then((userRow)=>{
                         if(userRow){
                             AuthController.getToken(userRow.uid,"token").then((token)=>{
+                                console.log("\n",data.token,"\n",token);
                                 if(data.token===token){
                                     resolve({
                                         data:userRow,
@@ -31,7 +32,7 @@ class TokenEntity {
                         } else {
                             reject({
                                 data:null,
-                                message:"User Not Found"
+                                message:"Customer Not Found"
                             });
                         }
                     });
