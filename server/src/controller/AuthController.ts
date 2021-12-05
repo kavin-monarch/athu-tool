@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
 import { getRepository } from "typeorm";
 import { Tokens } from "../entity/Tokens";
-import { User } from "../entity/User";
+import { Customer } from "../entity/Customer";
 class AuthController {
      static createUserAuth = async (data:userTokenEntity) => {
          const tokenRow = getRepository(Tokens).create(data);
@@ -10,11 +10,11 @@ class AuthController {
      }
 
      static getUser = async (username:string) => {
-        const data = await getRepository(User).findOne(username);
+        const data = await getRepository(Customer).findOne(username);
         return data;
      }
      static getTokenAvailable = async (data:requestTokenEntity) => {
-        // const dataFromUserTable = await getRepository(User).findOne(username);
+        // const dataFromUserTable = await getRepository(Customer).findOne(username);
         // console.log(dataFromUserTable);
         // if(dataFromUserTable){
         //     const tokenRow = await getRepository(Tokens).findOne(dataFromUserTable.uid);

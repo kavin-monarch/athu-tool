@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
 import { getRepository } from "typeorm";
-import { User } from "../entity/User";
+import { Customer } from "../entity/Customer";
 import { UserCredentials } from "../entity/UserCredentials";
 import * as bcrypt from 'bcrypt'; 
 // import { decrypt, encrypt } from "../utils/encryptDecrypt";

@@ -28,6 +28,7 @@ router.post("/register",(req: Request,res: Response)=>{
         email:req.body.email,
         password:req.body.password,
     }
+    console.log(client);
     if(!client.username || !client.email || !client.password){
         return res.status(404).json({
             message:"invalid data try again"
@@ -36,7 +37,7 @@ router.post("/register",(req: Request,res: Response)=>{
     UserController.createUser(client).then((result)=>{
         let accessToken = tokenManager.createToken<registerUserEntity>(client,"60s");
         let renewalToken = tokenManager.createRenewalToken<registerUserEntity>(client,"7d");
-        console.log(renewalToken);
+        console.log("Ren Token :",renewalToken,"\naccessToken :",accessToken);
         AuthController.createUserAuth({
             uid:result.uid,
             token:accessToken,
