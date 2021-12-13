@@ -1,37 +1,34 @@
-## Welcome to GitHub Pages
+## Welcome to AuthTool Pages
 
-You can use the [editor on GitHub](https://github.com/kavin-monarch/athu-tool/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+You can use the authtool V2 to maintain and preview the authentication code for any `2FA` Application
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Whenever you Trigger 2FA use can use this TOTP for authentication
 
-### Markdown
+### Security
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
+Encrypted Data Transfer and ejson for storing data incase you preffer for offline Authenticator mode 
+all data were encrypted in json on your local machine
 ```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+ ❌ We dont store token without your knowledge unless you manually trigger for cloud backup
+ ✅ At any point of time you can delete your cloud backup,but still your token encrypted locally
 ```
+  
+```markdown
+Inprogess
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+1.Commad Line Tool [CLI] for authtool
+2.Bot based TOTP access in secure closed way.
 
-### Jekyll Themes
+RoadMap
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/kavin-monarch/athu-tool/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+1. Custom Encryption Selection as preffered by user
+2. Chrome / Firefox Exntesion
+3. Dedicated Desktop App
+4. Server scalling for above features
+
+
+```
 
 ### Support or Contact
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+Having trouble with Authtool ?.we’ll help you sort it out.
